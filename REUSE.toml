@@ -1,0 +1,22 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+# REUSE 登记（spec/02 CONV-25）。源文件在头部带 SPDX-License-Identifier；
+# 下列无法或不宜加注释头的文件在此登记。
+version = 1
+
+# 版权声明对全部文件生效，与文件头中的许可证标识合并。
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "akari-project contributors"
+SPDX-License-Identifier = "GPL-3.0-or-later"
+
+# Claude Code 配置。
+[[annotations]]
+path = [
+  "CLAUDE.md",
+  ".claude/**",
+]
+precedence = "override"
+SPDX-FileCopyrightText = "akari-project contributors"
+SPDX-License-Identifier = "GPL-3.0-or-later"
